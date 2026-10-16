@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://coe6bcs6wfi35"]
+
+[ext_resource type="Script" uid="uid://qtl2y545kkxl" path="res://Map/room.gd" id="1_y0es3"]
+
+[node name="Room" type="Node2D" unique_id=997475213]
+script = ExtResource("1_y0es3")
+
+[node name="Gauche" type="Button" parent="." unique_id=1493669437]
+offset_left = 380.0
+offset_top = 330.0
+offset_right = 447.0
+offset_bottom = 361.0
+text = "Gauche"
+
+[node name="Droite" type="Button" parent="." unique_id=675937265]
+offset_left = 744.0
+offset_top = 325.0
+offset_right = 801.0
+offset_bottom = 356.0
+text = "Droite"
+
+[node name="Milieu" type="Button" parent="." unique_id=1235209083]
+offset_left = 573.0
+offset_top = 325.0
+offset_right = 629.0
+offset_bottom = 356.0
+text = "Milieu"
+
+[connection signal="pressed" from="Gauche" to="." method="_on_gauche_pressed"]
+[connection signal="pressed" from="Droite" to="." method="_on_droite_pressed"]
+[connection signal="pressed" from="Milieu" to="." method="_on_milieu_pressed"]
