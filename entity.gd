@@ -2,6 +2,6 @@
 extends Node2D
 class_name Entity
 
-var health : int
+@export var health : int
 var bloc : int
 var effects : Array
