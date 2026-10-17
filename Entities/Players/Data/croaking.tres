@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="PlayerData" format=3 uid="uid://w17wy66vxxrb"]
+
+[ext_resource type="Script" uid="uid://ccsjwv3p6ug4m" path="res://Entities/Players/player_data.gd" id="1_ka1yq"]
+[ext_resource type="Texture2D" uid="uid://cgpjuf03fkwrx" path="res://Assets/Characters/Croaking.png" id="1_y1l8n"]
+
+[resource]
+script = ExtResource("1_ka1yq")
+starting_money = 100
+name = "Croaking"
+profile_texture = ExtResource("1_y1l8n")
+starting_hp = 75
+metadata/_custom_type_script = "uid://ccsjwv3p6ug4m"

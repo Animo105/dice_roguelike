@@ -1,7 +1,11 @@
 @abstract extends RefCounted
 class_name CombatEffect
 
+var id: StringName
+var priority := 0
 var amount : int
+
+@abstract func _init(stacks : int) -> void
 
 ## Fonction pour modifier une action que l'owner de cet effet effectue. [br]
 ## source accessible par [code] action.source [/code], et cible accessible par [code] action.target [/code]. [br]
@@ -23,10 +27,10 @@ func modify_incoming_action(action : CombatAction) -> void:
 
 ## Triggered au début du tour, la source loop dans chaqu'une de ses effets
 ## [code] for effect in effects: effect.turn_start(self) [/code]
-func turn_start(source : Entity):
+func turn_start(source : EntityInstance):
 	pass
 
 ## Triggered a la fin du tour, la source loop dans chaqu'une de ses effets
 ## [code] for effect in effects: effect.turn_end(self) [/code]
-func turn_end(source : Entity):
+func turn_end(source : EntityInstance):
 	pass
